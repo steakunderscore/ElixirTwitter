@@ -35,8 +35,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :elixir_twitter, ElixirTwitter.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "henry",
+  password: "password",
   database: "elixir_twitter_dev",
   hostname: "localhost",
   pool_size: 10
