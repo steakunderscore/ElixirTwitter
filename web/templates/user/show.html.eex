@@ -17,6 +17,15 @@
     <%= @user.bio %>
   </li>
 
+  <li>
+    <strong>Messages:</strong>
+    <ul>
+      <%= for message <- @messages do %>
+        <li><%= message.body %></li>
+      <% end%>
+    </ul>
+  </li>
+
 </ul>
 
 <%= link "Edit", to: user_path(@conn, :edit, @user) %>

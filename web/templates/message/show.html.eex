@@ -9,7 +9,7 @@
 
   <li>
     <strong>User:</strong>
-    <%= @message.user_id %>
+    <%= link @user.name, to: user_path(@conn, :show, @user) %>
   </li>
 
 </ul>

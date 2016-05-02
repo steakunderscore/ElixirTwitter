@@ -8,7 +8,7 @@ defmodule ElixirTwitter.Message do
     timestamps
   end
 
-  @required_fields ~w(body)
+  @required_fields ~w(body user_id)
   @optional_fields ~w()
 
   @doc """

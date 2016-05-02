@@ -30,7 +30,8 @@ defmodule ElixirTwitter.MessageController do
 
   def show(conn, %{"id" => id}) do
     message = Repo.get!(Message, id)
-    render(conn, "show.html", message: message)
+    user = Repo.get!(ElixirTwitter.User, message.user_id)
+    render(conn, "show.html", message: message, user: user)
   end
 
   def edit(conn, %{"id" => id}) do
