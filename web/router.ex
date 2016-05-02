@@ -21,6 +21,7 @@ defmodule ElixirTwitter.Router do
     get "/hello/:messenger", HelloController, :show
 
     resources "/users", UserController
+    resources "/messages", MessageController
   end
 
   # Other scopes may use custom stacks.
